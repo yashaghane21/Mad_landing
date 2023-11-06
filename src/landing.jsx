@@ -9,7 +9,7 @@ const landing = () => {
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            animationData: animationData, // Your animation data
+            animationData: animationData,
         });
         return () => anim.destroy();
     }, [])

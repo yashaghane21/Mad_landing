@@ -1,24 +1,15 @@
 import React, { useEffect } from 'react'
-import lottie from 'lottie-web';
-import animationData from "./uu.json"
+
 import d from "./w.png"
 const landing = () => {
-    useEffect(() => {
-        const anim = lottie.loadAnimation({
-            container: document.getElementById('lottie-container'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            animationData: animationData,
-        });
-        return () => anim.destroy();
-    }, [])
+
+
     return (
         <div>
             <div className='flex flex-col sm:flex-row'>
                 <div className='w-[100%] sm:w-[50%] flex justify-center items-center sm:h-[71vh] h-[52vh] '>
                     {/* <div id="lottie-container" style={{ width: '600px', height: '600px' }} /> */}
-                    <img src={d} alt='dd'  />
+                    <img src={d} alt='dd' />
                 </div>
                 <div className='w-[100%] sm:w-[50%] flex flex-col justify-center items-center'>
                     <p className='font-bold text-xl sm:text-5xl text-green-600'>Welcome to Java Tutorial</p>
